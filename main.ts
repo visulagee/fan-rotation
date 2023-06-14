@@ -1,0 +1,18 @@
+input.onButtonPressed(Button.A, function () {
+    I2C_LCD1602.LcdInit(0)
+    basic.showIcon(IconNames.Yes)
+    I2C_LCD1602.on()
+    I2C_LCD1602.BacklightOn()
+    I2C_LCD1602.ShowString("ON", 0, 0)
+    pins.digitalWritePin(DigitalPin.P2, 0)
+    pins.analogWritePin(AnalogPin.P1, 500)
+})
+input.onButtonPressed(Button.B, function () {
+    I2C_LCD1602.LcdInit(0)
+    basic.showIcon(IconNames.No)
+    I2C_LCD1602.on()
+    I2C_LCD1602.BacklightOn()
+    I2C_LCD1602.ShowString("OFF", 0, 0)
+    pins.digitalWritePin(DigitalPin.P2, 0)
+    pins.analogWritePin(AnalogPin.P1, 0)
+})
