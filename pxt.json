@@ -5,7 +5,8 @@
         "core": "*",
         "radio": "*",
         "microphone": "*",
-        "i2cLCD1602": "github:makecode-extensions/i2clcd1602#v1.5.0"
+        "i2cLCD1602": "github:makecode-extensions/i2clcd1602#v1.5.0",
+        "MakerBit": "github:1010technologies/pxt-makerbit#v2.2.0"
     },
     "files": [
         "main.blocks",
@@ -16,7 +17,7 @@
         "test.ts"
     ],
     "targetVersions": {
-        "target": "5.0.12",
+        "target": "6.0.8",
         "targetId": "microbit"
     },
     "supportedTargets": [
